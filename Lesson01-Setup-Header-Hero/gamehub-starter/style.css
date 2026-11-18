@@ -24,6 +24,7 @@ img { max-width: 100%; display: block; } /* pictures never overflow their box */
   margin: 0 auto;
   padding: 0 24px;
 }
+
 /* STEP 2 · .site-header and .nav
    .site-header: a dark background colour.
    .nav: logo on the left, links on the right, centered up and down,
@@ -35,7 +36,8 @@ img { max-width: 100%; display: block; } /* pictures never overflow their box */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* STEP 3 · .nav-links
@@ -55,18 +57,52 @@ nav .nav-links a {
 }
 /* STEP 4 · .logo
    Bigger than the links (1.6rem), bold, white, no underline. */
-
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
 
 /* STEP 5 · .hero
    At least 70vh tall, a background colour, white text.
    Text centered, and the content centered up and down. */
+.hero {
+  min-height: 70vh;
+  background-color: #3b82f6;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 
 /* STEP 6 · .btn and .hero-buttons
    .btn: inline-block, padding 12px 28px, rounded corners, no underline, bold.
    Give .btn-primary and .btn-secondary different looks.
    .hero-buttons: the two buttons side by side, centered, 16px apart. */
-
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-primary {
+  background-color: #10b981;
+  color: white;
+}
+.btn-secondary {
+  background-color: #f59e0b;
+  color: white;
+}
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
 
 /* Done early? Try other colours from the reference sheet (Colors tab).
    On day 2 we turn your colours into variables. */
