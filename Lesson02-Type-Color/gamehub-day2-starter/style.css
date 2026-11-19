@@ -18,7 +18,7 @@ img { max-width: 100%; display: block; }
 
 /* PART B: STEP 1 ▸ put your palette and fonts in :root */
 :root {
-  --color-primary: #f59e0b;
+  --color-primary: #4e3509;
   --color-accent: #111827;
   --color-dark: #ffffff;
   --font-family: 'Poppins', sans-serif;
@@ -55,6 +55,6 @@ h3 { font-size: 1.5rem; }
 }
 /* STEP 6 ▸ text you can read on it */
 .tagline {
-    color: #e5e7eb contrast(7.5);
+    color: var(--color-dark);
 } 
 
